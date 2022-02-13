@@ -1,0 +1,176 @@
+@import "navAndFooterStyles.css";
+
+* {
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    z-index: 1;
+    margin-top: 3%;
+    padding: 0;
+    color: #333332b4;
+    font-family: 'Mate', serif;
+    font-size: 20px;
+    font-weight: 420;
+    text-rendering: optimizeLegibility;
+    height: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: rgba(0, 0, 0, .75);
+}
+
+.wrapper {
+    position: relative;
+    padding: 0;
+    height: 95%;
+}
+
+.left {
+    background-color: rgba(0, 0, 0, .025);
+    border-right: 1px solid rgba(0, 0, 0, .05);
+    float: right;
+    height: 100%;
+    margin-left: -2px;
+    min-width: 260px;
+    position: fixed;
+    width: 30%;
+}
+
+.right {
+    float: right;
+    height: 100%;
+    position: relative;
+    width: 70%;
+}
+
+.name-resume {
+    background: rgba(0, 0, 0, .001);
+    bottom: 0;
+    height: 300px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 5em;
+    width: 85%;
+}
+
+.name-resume h1 {
+    font-family: 'Mate', serif;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.name-resume h1 em {
+    color: rgba(0, 0, 0, .3);
+    font-style: normal;
+    font-weight: 700;
+}
+
+.name-resume p {
+    color: rgba(0, 0, 0, .5);
+    font-size: .75em;
+    line-height: 1.5;
+    margin: 0 8px 0 0;
+    text-align: center;
+}
+
+.name-resume .name-subtitles {
+    margin: 0 auto;
+    width: 85%;
+}
+
+.info {
+    margin: 0 auto;
+    max-width: 975px;
+    padding: 3em;
+}
+
+.info h1 {
+    font-size: 1.75em;
+}
+
+.info p {
+    color: rgba(0, 0, 0, .3);
+}
+
+.info p em {
+    color: rgba(0, 0, 0, .75);
+    font-style: normal;
+}
+
+.info section {
+    margin: 100px auto;
+}
+
+.info ul {
+    list-style-type: none;
+    margin-top: -10px;
+    max-width: 570px;
+    padding: 0;
+}
+
+.skills-activities li {
+    background: rgba(0, 0, 0, .75);
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.767);
+    display: inline-block;
+    list-style: none;
+    margin: 15px 15px 0 0;
+    padding: 10px;
+    text-align: justify;
+}
+
+.skills-activities li:hover
+{
+    background:rgb(162, 192, 192);
+}
+
+@media screen and (max-width: 48em) {
+    .left
+    {
+        margin-top: -30px;
+        float: inline-start;
+        position: relative !important;
+        width:100%;
+        min-height:150px;
+        padding: 70;
+    }
+    .right
+    {
+        margin-top: 7%;
+        float:none;
+        position:relative !important;
+        width:100%;
+        min-height:100px;
+        min-width: 100px;
+    }
+    body 
+    {
+        padding-top: 20px;
+    }
+    .skills-activities li {
+        text-align: start;
+    }
+}
+
+@media screen and (max-width: 75em) {
+    .right,.left
+    {
+        margin-top: 7%;
+    }
+    .left
+    {
+        height: 50%;
+    }
+}
